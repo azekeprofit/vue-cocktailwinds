@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer {
+    :root {
+--min-nav-width: 150px;
+--min-table-width: 320px;
+--max-table-width: 1024px;
+    }
+}
