@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { listOfCocktails } from './model/cocktail';
-import { watch, ref } from 'vue';
+import { computed } from 'vue';
 
 const route = useRoute();
-const notFound = ref(false);
-watch(() => route.name == 'NotFound', nf => { notFound.value = nf })
+const notFound = computed(() => route.name == 'NotFound');
 </script>
 
 <template>
-  <div class="p-5 flex flex-row justify-center full">
+  <div class="sm:p-5 flex flex-row justify-center full">
   <nav class="border-1 border-black border-collapse lg:p-6 sm:p-0 md:p-2 min-w-[--min-nav-width] items-stretch">
     <ul class="list-none">
       <li v-for="cocktail in listOfCocktails">
