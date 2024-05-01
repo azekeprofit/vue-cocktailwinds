@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: "/vue-cocktailwinds/",
   plugins: [
-    vue(),tailwindcss()
+    vue(), tailwindcss()
   ],
   resolve: {
     alias: {
