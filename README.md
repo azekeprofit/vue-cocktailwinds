@@ -2,6 +2,8 @@
 
 Simple Vue3 project showing cocktails from [thecocktaildb.com](https://www.thecocktaildb.com) API
 
+https://azekeprofit.github.io/vue-cocktailwinds
+
 ## Project Setup
 
 ```sh
